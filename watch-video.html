@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>watch</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="home.html" class="logo">Knowledge Hub</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">ABHIRAM PANDENA</h3>
+         <p class="role">Student</p>
+         <a href="profile.html" class="btn">view profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">ABHIRAM PANDENA </h3>
+      <p class="role">Student</p>
+      <a href="profile.html" class="btn">view profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+   </nav>
+
+</div>
+
+<section class="watch-video">
+
+   <div class="video-container">
+      <div class="video">
+         <video src="images/vid-1.mp4" controls poster="images/post-1-1.png" id="video"></video>
+      </div>
+      <h3 class="title">complete HTML tutorial (part 01)</h3>
+      <div class="info">
+         <p class="date"><i class="fas fa-calendar"></i><span>01-12-2024</span></p>
+         <p class="date"><i class="fas fa-heart"></i><span>61 likes</span></p>
+      </div>
+      <div class="tutor">
+         <img src="images/pic-2.jpg" alt="">
+         <div>
+            <h3>Amelia</h3>
+            <span>Trainer</span>
+         </div>
+      </div>
+      <form action="" method="post" class="flex">
+         <a href="playlist.html" class="inline-btn">view playlist</a>
+         <button><i class="far fa-heart"></i><span>like</span></button>
+      </form>
+      <p class="description">This tutorial provided an overview of HTML basics, common tags, and techniques used in modern web development. HTML is the foundation of all web pages, and learning its structure will help you create well-organized and accessible websites.By the end of the tutorial, you'll have the skills to build and design simple websites, understand the structure of web pages, and prepare yourself for learning CSS and JavaScript to enhance your web development journey. Happy coding!
+      </p>
+   </div>
+
+</section>
+
+<section class="comments">
+
+   <h1 class="heading">9 comments</h1>
+
+   <form action="" class="add-comment">
+      <h3>add comments</h3>
+      <textarea name="comment_box" placeholder="enter your comment" required maxlength="1000" cols="30" rows="10"></textarea>
+      <input type="submit" value="add comment" class="inline-btn" name="add_comment">
+   </form>
+
+   <h1 class="heading">user comments</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-1.jpg" alt="">
+            <div>
+               <h3>ABHIRAM PANDENA</h3>
+               <span>01-12-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">This is a comment form Abhi</div>
+         <form action="" class="flex-btn">
+            <input type="submit" value="edit comment" name="edit_comment" class="inline-option-btn">
+            <input type="submit" value="delete comment" name="delete_comment" class="inline-delete-btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>Ava</h3>
+               <span>01-12-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">This video made learning so much easier 
+            thank you!!!</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-3.jpg" alt="">
+            <div>
+               <h3>James</h3>
+               <span>01-12-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">"Great explanation and examples.Helped me understand the
+             topic perfectly."
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-4.jpg" alt="">
+            <div>
+               <h3>Michael</h3>
+               <span>03-12-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">Fantastic tutorial! Clear, concise, and easy to follow!</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-5.jpg" alt="">
+            <div>
+               <h3>Charlotte</h3>
+               <span>03-12-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">"Amazing tutorial, well-structured and very informative!"</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-9.jpg" alt="">
+            <div>
+               <h3>Leo</h3>
+               <span>05-12-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">thanks for the tutorial!
+
+            how to download source code file?
+         </div>
+      </div>
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-6.jpg" alt="">
+            <div>
+               <h3>siddu</h3>
+               <span>07-12-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">"I was struggling with HTML, but this tutorial made it so simple! Thanks for breaking everything down!"</div>
+      </div>
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-4.jpg" alt="">
+            <div>
+               <h3>Mani</h3>
+               <span>09-12-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">"Perfect for anyone new to HTML. I appreciated the detailed explanations and practical examples!</div>
+      </div>
+      </div>
+
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   &copy; copyright @ 2024 by <span>Mr.Abhi designer</span> | all rights reserved!
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+   
+</body>
+</html>
